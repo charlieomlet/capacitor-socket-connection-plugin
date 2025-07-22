@@ -33,7 +33,8 @@
   "scripts": {
     "lint": "yarn run eslint",
     "build": "npm run clean && tsc && rollup -c rollup.config.mjs",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@spryrocks/logger-plugin": "^0.1.17-alpha.2"
