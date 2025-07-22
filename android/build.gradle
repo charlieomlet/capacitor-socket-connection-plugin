@@ -6,7 +6,7 @@ ext {
 buildscript {
     ext {
         kotlin_version = rootProject.hasProperty('kotlin_version') ? rootProject.ext.kotlin_version : '1.9.22'
-        androidToolsBuildGradleVersion = rootProject.hasProperty('androidToolsBuildGradleVersion') ? rootProject.ext.androidToolsBuildGradleVersion : '8.2.1'
+        androidToolsBuildGradleVersion = rootProject.hasProperty('androidToolsBuildGradleVersion') ? rootProject.ext.androidToolsBuildGradleVersion : '8.7.2'
     }
     repositories {
         google()
@@ -42,8 +42,8 @@ android {
         abortOnError false
     }
     compileOptions {
-        sourceCompatibility rootProject.hasProperty('javaSourceCompatibility') ? rootProject.ext.javaSourceCompatibility : JavaVersion.VERSION_17
-        targetCompatibility rootProject.hasProperty('javaTargetCompatibility') ? rootProject.ext.javaSourceCompatibility : JavaVersion.VERSION_17
+        sourceCompatibility rootProject.hasProperty('javaSourceCompatibility') ? rootProject.ext.javaSourceCompatibility : JavaVersion.VERSION_21
+        targetCompatibility rootProject.hasProperty('javaTargetCompatibility') ? rootProject.ext.javaSourceCompatibility : JavaVersion.VERSION_21
     }
 }
 
